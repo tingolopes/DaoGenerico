@@ -11,8 +11,8 @@ public class RemoveApplication {
         DaoGenerico<Pessoa> daoPessoa = new DaoGenerico<>();
         DaoGenerico<Carro> daoCarro = new DaoGenerico<>();
 
-        daoPessoa.remove(Pessoa.class, 1L);
-        daoCarro.remove(Carro.class, 1L);
+        daoPessoa.remove(Pessoa.class, 1);
+        daoCarro.remove(Carro.class, 1);
 
         System.out.println("Entidades removidas com sucesso!");
 

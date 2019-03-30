@@ -9,7 +9,7 @@ public class DaoGenerico<T extends EntidadeBase> {
 
     private static EntityManager manager = ConnectionFactory.getEntityManager();
 
-    public T findById(Class<T> clazz, Long id) {
+    public T findById(Class<T> clazz, Integer id) {
         return manager.find(clazz, id);
     }
 
@@ -27,7 +27,7 @@ public class DaoGenerico<T extends EntidadeBase> {
         }
     }
 
-    public void remove(Class<T> clazz, Long id) {
+    public void remove(Class<T> clazz, Integer id) {
         T t = findById(clazz, id);
         try {
             manager.getTransaction().begin();

@@ -1,7 +1,6 @@
 package br.edu.ifms.dao;
 
 import javax.persistence.EntityManager;
-
 import br.edu.ifms.connection.ConnectionFactory;
 import br.edu.ifms.model.EntidadeBase;
 

@@ -8,40 +8,40 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tb_carro")
+@Table(name = "tb_carro")
 public class Carro implements EntidadeBase {
-	
-	private Long id;
-	private String modelo;
-	private int anoFabricacao;
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id")
-	public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-	
-	@Column(name="modelo")
-	public String getModelo() {
-		return modelo;
-	}
+    private Integer id;
+    private String modelo;
+    private int anoFabricacao;
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-	
-	@Column(name="ano_fabricacao")
-	public int getAnoFabricacao() {
-		return anoFabricacao;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    public Integer getId() {
+        return id;
+    }
 
-	public void setAnoFabricacao(int anoFabricacao) {
-		this.anoFabricacao = anoFabricacao;
-	}
-	
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Column(name = "modelo")
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    @Column(name = "ano_fabricacao")
+    public int getAnoFabricacao() {
+        return anoFabricacao;
+    }
+
+    public void setAnoFabricacao(int anoFabricacao) {
+        this.anoFabricacao = anoFabricacao;
+    }
+
 }

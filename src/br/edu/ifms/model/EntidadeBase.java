@@ -1,6 +1,6 @@
 package br.edu.ifms.model;
 
+public interface EntidadeBase {
 
-public interface EntidadeBase{
-	public Long getId();
+    public Integer getId();
 }

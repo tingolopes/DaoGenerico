@@ -11,8 +11,8 @@ public class FindByIdApplication {
         DaoGenerico<Pessoa> daoPessoa = new DaoGenerico<>();
         DaoGenerico<Carro> daoCarro = new DaoGenerico<>();
 
-        Pessoa pessoa = daoPessoa.findById(Pessoa.class, 3);
-        Carro carro = daoCarro.findById(Carro.class, 4);
+        Pessoa pessoa = daoPessoa.findById(Pessoa.class, 3L);
+        Carro carro = daoCarro.findById(Carro.class, 4L);
 
         System.out.println("### Entidade Pessoa encontrada ###");
         System.out.println("ID: " + pessoa.getId());

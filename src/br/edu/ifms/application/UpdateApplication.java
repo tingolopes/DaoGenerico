@@ -9,7 +9,7 @@ public class UpdateApplication {
 
         DaoGenerico<Pessoa> daoPessoa = new DaoGenerico<>();
 
-        Pessoa pessoa = daoPessoa.findById(Pessoa.class, 3L);
+        Pessoa pessoa = daoPessoa.findById(Pessoa.class, 3);
         pessoa.setNome("Raphael Oliveira Neves");
         daoPessoa.saveOrUpdate(pessoa);
         System.out.println("Entidade atualizada com sucesso.");

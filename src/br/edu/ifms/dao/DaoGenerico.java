@@ -1,7 +1,6 @@
 package br.edu.ifms.dao;
 
 import javax.persistence.EntityManager;
-
 import br.edu.ifms.connection.ConnectionFactory;
 import br.edu.ifms.model.EntidadeBase;
 import java.util.List;
@@ -11,9 +10,7 @@ public class DaoGenerico<T extends EntidadeBase> {
 
     private static EntityManager manager = ConnectionFactory.getEntityManager();
 
-    ;
-	
-	public T findById(Class<T> clazz, Long id) {
+    public T findById(Class<T> clazz, Long id) {
         return manager.find(clazz, id);
     }
 

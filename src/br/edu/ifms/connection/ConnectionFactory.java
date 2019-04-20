@@ -6,10 +6,10 @@ import javax.persistence.Persistence;
 
 public class ConnectionFactory {
 
-    private static EntityManagerFactory factory = Persistence.createEntityManagerFactory("dao-generico");
+    private static final EntityManagerFactory FACTORY = Persistence.createEntityManagerFactory("dao-generico");
 
     public static EntityManager getEntityManager() {
-        return factory.createEntityManager();
+        return FACTORY.createEntityManager();
     }
 
 }

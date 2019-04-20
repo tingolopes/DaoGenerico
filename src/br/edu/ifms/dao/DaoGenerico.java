@@ -20,7 +20,7 @@ public class DaoGenerico<T extends EntidadeBase> {
         List<T> lista = manager.createQuery(query).getResultList();
         return lista;
     }
-
+    
     public void saveOrUpdate(T obj) {
         try {
             manager.getTransaction().begin();

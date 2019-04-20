@@ -17,9 +17,9 @@ public class DaoGenerico<T extends EntidadeBase> {
 
     public <T> List<T> findByNome(Class<T> clazz, String nomeBusca, String nomeColuna) {
         String tabela = clazz.getSimpleName();
-        String jpql = "from "+tabela+" where "+nomeColuna+" like :nome";
+        String jpql = "from "+tabela+" where "+nomeColuna+" like :nomeBusca";
         Query query = MANAGER.createQuery(jpql, clazz);
-        query.setParameter("nome", nomeBusca + "%");
+        query.setParameter("nomeBusca", nomeBusca + "%");
         return (List<T>) query.getResultList();
     }
 

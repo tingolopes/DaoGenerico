@@ -23,18 +23,17 @@ public class FindByIdApplication {
         System.out.println("### Entidade Carro encontrada ###");
         System.out.println("ID: " + carro.getId());
         System.out.println("MODELO: " + carro.getModelo());
-        
+
         //tres pessoas que comecam com Raphael!!! Deu certo!!!
 //        System.out.println(daoPessoa.findByNome(Pessoa.class, "Raphael", "nome").toString());
-        
-        for(Pessoa p : daoPessoa.findByNome(Pessoa.class, "Raphael", "nome")){
+        for (Pessoa p : daoPessoa.findByNome(Pessoa.class, "Raphael", "nome")) {
             //tras a lista de pessoas com esse nome
-            System.out.println(p.getId()+" "+p.getNome()+" "+p.getIdade());
+            System.out.println(p.getId() + " " + p.getNome() + " " + p.getIdade());
         }
-        
-        for(Carro c : daoCarro.findByNome(Carro.class, "Mustang", "modelo")){
+
+        for (Carro c : daoCarro.findByNome(Carro.class, "Mustang", "modelo")) {
             //tras a lista de carros com esse nome
-            System.out.println(c.getId()+" "+c.getModelo()+" "+c.getAnoFabricacao());
+            System.out.println(c.getId() + " " + c.getModelo() + " " + c.getAnoFabricacao());
         }
 
     }

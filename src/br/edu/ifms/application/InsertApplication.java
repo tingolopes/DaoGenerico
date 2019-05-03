@@ -24,7 +24,7 @@ public class InsertApplication {
         daoCarro.saveOrUpdate(carro);
 
         System.out.println("Entidades salvas com sucesso!");
-
+        
     }
 
 }

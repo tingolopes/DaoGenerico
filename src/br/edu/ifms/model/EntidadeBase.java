@@ -1,6 +1,8 @@
 package br.edu.ifms.model;
 
-public interface EntidadeBase {
+import java.io.Serializable;
+
+public interface EntidadeBase extends Serializable{
 
     public Long getId();
 }
